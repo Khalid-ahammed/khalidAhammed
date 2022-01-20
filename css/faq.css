@@ -1,0 +1,85 @@
+#hcolors {
+    display: flex;
+    justify-content: center;
+}
+
+.faq-app {
+    margin-bottom: 100px;
+}
+
+.faq-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+h3 {
+    font-size: 1.7rem;
+    color: var(--dark);
+    font-family: var(--cursive2);
+}
+
+p {
+    font-size: 1.1rem;
+    opacity: .8;
+    color: var(--brown);
+    font-style: italic;
+}
+
+.question {
+    background-color: var(--lightest);
+    max-width: 650px;
+    width: 100%;
+    box-shadow: var(--dark-shadow);
+    margin: 0 auto 15px auto;
+    padding: 10px;
+    transition: var(--transition);
+    border-radius: 20px 5px;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.question-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: var(--transition);
+    transition-duration: .2s;
+}
+
+.question-btns:hover {
+    transform: scale(1.1);
+}
+
+.question-btns i {
+    font-size: 1.6rem;
+    color: var(--brown);
+}
+
+.minus {
+    display: none;
+}
+
+.question .question-body {
+    padding: 10px;
+    display: none;
+    border-top: 1px solid var(--golden);
+}
+
+.question.active .minus {
+    display: block;
+}
+
+.question.active .plus {
+    display: none;
+}
+
+.question.active .question-body {
+    display: block;
+}

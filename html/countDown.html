@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/countDown.css">
+    <title>Countdown</title>
+</head>
+
+<body>
+    <header id="header" data-after="RETURN HOME"></header>
+    <!-- main countdown sec starts -->
+    <section class="countdown container">
+        <div class="countDown-container">
+            <div id="hcolors"></div>
+            <div class="countdown-body">
+                <div class="countdown-pic"><img src="https://cdn.vox-cdn.com/thumbor/v97OD-MBgNjw8p5crApucVs9RB8=/0x0:2050x1367/1800x1800/filters:focal(1025x684:1026x685)/cdn.vox-cdn.com/uploads/chorus_asset/file/22022572/bfarsace_201106_4269_012.0.jpg" alt="phone-img" class="giveaway-img"></div>
+                <div class="countdown-desc">
+                    <div class="countdown-deadline">
+                        <h1 class="deadline-header">iphone 12 pro max</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil ad debitis iure totam quasi. Aliquid rerum quam necessitatibus commodi!
+                            <span id="deadline" style="font-weight: bolder;opacity: 1; color: var(--dark);"></span>
+                        </p>
+                    </div>
+                    <div class="countdown-watch">
+                        <span id="day" data-up="day">2</span>
+                        <span id="hour" data-up="hour">11</span>
+                        <span id="min" data-up="minute">52</span>
+                        <span id="sec" data-up="second">25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- mian countdown sec ends -->
+
+    <footer id="footer"></footer>
+    <a href="#home">
+        <div class="upper-arrow" id="upper-arrow">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </a>
+    <script src="../js/app.js"></script>
+    <script src="../js/countDown.js"></script>
+</body>
+
+</html>

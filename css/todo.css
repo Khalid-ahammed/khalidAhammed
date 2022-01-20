@@ -1,0 +1,243 @@
+:root {
+    --glassBg: rgba(226, 226, 226, 0.5);
+    /* --glassBg: rgba(43, 32, 32, 0.5); */
+    --input-color: rgba(255, 250, 224, 0.7);
+    --red: red;
+    --green: green;
+    --brown: brown;
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/7150986/pexels-photo-7150986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: center;
+    background-size: cover;
+}
+
+button {
+    background: transparent;
+}
+
+.todoapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todoapp .todo {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    background-color: var(--glassBg);
+    backdrop-filter: blur(1px);
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.todo .todo-header {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+}
+
+.todo-title h2 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: var(--cursive2);
+    color: var(--dark);
+    font-weight: bolder;
+}
+
+.todo-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.todo-desc .input-form {
+    display: grid;
+    row-gap: 10px;
+    background-color: var(--glassBg);
+    backdrop-filter: blur(5px);
+    padding: 4px;
+}
+
+.todo-desc .input-form .input-title p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.red-text {
+    color: var(--red);
+}
+
+.brown-text {
+    color: var(--brown);
+}
+
+.green-text {
+    color: var(--green);
+}
+
+.todo-desc .input-form .input-sec {
+    display: grid;
+    row-gap: 20px;
+    padding: 0 10px 20px 10px;
+}
+
+.input-field {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.to {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--brown);
+    font-family: var(--cursive2);
+    margin: 3px;
+}
+
+.todo-desc .input-form input {
+    background-color: var(--input-color);
+    /* backdrop-filter: blur(1px); */
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    color: var(--dark);
+    font-style: italic;
+    outline: none;
+}
+
+.main-task {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.submit-btn {
+    background-color: var(--brown);
+    transition: var(--transition);
+}
+
+.submit-btn i {
+    font-size: 2.2rem;
+    color: var(--golden);
+    transition: var(--transition);
+}
+
+.submit-btn:hover {
+    background-color: var(--dark);
+}
+
+.submit-btn:hover i {
+    color: var(--lightest);
+}
+
+#input-box {
+    margin: 0;
+    border-radius: 0;
+    min-height: 50px;
+}
+
+.timei {
+    /* padding: 3px 5px;
+    font-size: .85rem!important; */
+    margin-bottom: 10px;
+}
+
+.todo-body {
+    min-height: 20px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todo-body.active {
+    display: flex;
+}
+
+.todo-body .clear-btn {
+    width: fit-content;
+    padding: 10px;
+    margin: 10px auto 5px auto;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: var(--red);
+    font-family: var(--cursive2);
+}
+
+
+/* task article */
+
+.task {
+    padding: 10px;
+    background-color: var(--glassBg);
+    margin: 10px;
+    display: grid;
+    row-gap: 10px;
+    backdrop-filter: blur(1px);
+    min-height: 90px;
+    border-radius: 5px;
+}
+
+.task-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    font-family: var(--cursive2);
+    border-bottom: 1px solid var(--lightest);
+}
+
+.task-header h4 {
+    font-size: 1.2rem;
+    color: var(--brown);
+}
+
+.task-header p span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--dark);
+    font-family: none;
+    margin: 0 2px;
+}
+
+.task-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#task-desc {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bolder;
+    color: var(--dark);
+}
+
+.task-controller {
+    margin: 2px 3px;
+    font-size: 1.2rem;
+    opacity: .8;
+}
+
+#delete-btn {
+    color: var(--red);
+}
+
+#edit-btn {
+    color: var(--brown);
+}

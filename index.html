@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Combination project</title>
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <!-- home section -->
+    <section id="home">
+        <header id="header" data-after="RETURN HOME"></header>
+
+        <div id="hero" class="hero container">
+            <div class="hero-title">
+                <h4>Hello, my name is,</h4>
+                <h1 class="styled-h1">Khalid Ahammed</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dicta illum. Perferendis accusamus architecto corporis temporibus totam consectetur nisi exercitationem.</p>
+                <a href="#projects" class="link projectId">
+                    <button class="btn home-btn">my projects</button>
+                </a>
+            </div>
+            <div class="hero-body">
+                <div class="rectangle">
+                    <h1 class="styled-h1">
+                        Welcome to my website
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main body -->
+    <div class="main-body container">
+        <!-- about me -->
+        <section id="about">
+            <div class="section-title">
+                <h2 class="title-header">About Me</h2>
+            </div>
+            <div class="about-body">
+                <div class="about-pic">
+                    <div class="pic-container">
+                        <img src="images/person.jpg" alt="my-image">
+                    </div>
+                </div>
+                <div class="about-desc">
+                    <div class="about-buttons">
+                        <button class="about-btn active" data-id="mySelf">My self</button>
+                        <button class="about-btn" data-id="education">Education</button>
+                        <button class="about-btn" data-id="mySkill">My skills</button>
+                    </div>
+
+                    <article class="btn-desc">
+                        <div class="content active" id="mySelf">
+                            <h3>My self</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis aut deleniti nisi laudantium unde molestias delectus, numquam iste, velit, architecto inventore tempore corrupti assumenda doloribus? Commodi minima perferendis
+                                beatae nostrum.</p>
+                        </div>
+                        <div class="content" id="education">
+                            <h3>Education</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis aut deleniti nisi laudantium unde molestias delectus, numquam iste, velit, architecto inventore tempore corrupti assumenda doloribus? Commodi minima perferendis
+                                beatae nostrum. Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="content" id="mySkill">
+                            <h3>My Skills</h3>
+                            <p>Lorem, ipsum dolor deleniti nisi laudantium unde molestias delectus, numquam iste, velit, architecto inventore tempore corrupti assumenda doloribus? Commodi minima perferendis beatae nostrum.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="cv-button">
+                <a target="_blank" href="#"><button class="btn cv-btn">download cv</button></a>
+            </div>
+        </section>
+        <!-- about me ends -->
+        <!-- My projects starts -->
+        <section id="projects">
+            <div class="section-title">
+                <h2 class="title-header">My projects</h2>
+            </div>
+            <div class="projects-body">
+                <div class="filter-btns"></div>
+                <div class="project-list"></div>
+            </div>
+        </section>
+        <!-- my projects ends -->
+        <!-- contact me starts -->
+        <section id="contact">
+            <div class="section-title">
+                <h2 class="title-header">Contact Me</h2>
+            </div>
+            <div class="contact-body">
+                <div class="contact-title">
+                    <div class="rectangle contact-rectangle">
+                        <h1 class="styled-h1">Say Hello</h1>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="form">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="your name" autocomplete="off">
+                        </div>
+                        <div class="field">
+                            <label for="emal">Email</label>
+                            <input type="email" id="email" placeholder="your email" autocomplete="off">
+                        </div>
+                        <div class="field">
+                            <label for="message">your message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="feel free to comment"></textarea>
+                        </div>
+                        <button class="btn form-btn" value="submit" type="submit">Submit</button>
+                        <!-- <input type="submit" value="Submit"> -->
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- contact me ends -->
+    </div>
+    <!-- main body ends -->
+
+    <!-- footer starts -->
+    <footer id="footer"></footer>
+    <!-- footer ends -->
+    <a href="#home">
+        <div class="upper-arrow" id="upper-arrow">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </a>
+
+    <script src="js/app.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

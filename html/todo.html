@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/todo.css">
+    <title>TO DO APP</title>
+    <style>
+        #hcolors {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" data-after="RETURN HOME"></header>
+
+    <!-- main sec todo starts -->
+    <section class="container todoapp">
+        <div class="todo">
+            <div class="todo-header">
+                <div class="todo-title">
+                    <h2 class="title title-item">To-do list</h2>
+                    <div id="hcolors"></div>
+                </div>
+                <div class="todo-desc">
+                    <form class="input-form" id="todo-form">
+                        <div class="input-title">
+                            <p class="alert"></p>
+                        </div>
+                        <div class="input-sec">
+                            <div class="input-field">
+                                <div class="time">
+                                    <input type="time" class="timei" id="start-time">
+                                    <span class="to">to</span>
+                                    <input type="time" class="timei" id="end-time">
+                                </div>
+                                <!-- <label for="start" class="datelabel">Start date:</label> -->
+                                <input type="date" id="startDate" name="work-start" value="" min="2021-09-23" max="2050-12-31">
+                            </div>
+                            <div class="main-task">
+                                <input type="text" id="input-box" placeholder="Enter your task" autocomplete="off">
+                                <button class="submit-btn" type="submit"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="todo-body">
+                <div class="todo-content"></div>
+                <button class="clear-btn">Clear all</button>
+            </div>
+        </div>
+    </section>
+    <!-- main sec todo ends -->
+
+    <footer id="footer"></footer>
+    <a href="#home">
+        <div class="upper-arrow" id="upper-arrow">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </a>
+    <script src="../js/app.js"></script>
+    <script src="../js/todo.js"></script>
+</body>
+
+</html>
